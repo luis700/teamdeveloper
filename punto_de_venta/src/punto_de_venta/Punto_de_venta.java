@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package punto_de_venta;
-
+import javax.swing.*;
 /**
  *
  * @author luisf
@@ -16,6 +16,7 @@ public class Punto_de_venta {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JOptionPane.showMessageDialog(null,"hola alberto");
     }
     
 }

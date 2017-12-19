@@ -5,6 +5,10 @@
  */
 package punto_de_venta.vistas;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.UnsupportedLookAndFeelException;
+
 /**
  *
  * @author soyxb
@@ -16,6 +20,7 @@ public class frmProveedores extends javax.swing.JFrame {
      */
     public frmProveedores() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -73,6 +78,7 @@ public class frmProveedores extends javax.swing.JFrame {
         lblLupa = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         panContenedor.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -89,10 +95,12 @@ public class frmProveedores extends javax.swing.JFrame {
         lblTitulo.setName("lblTitulo"); // NOI18N
 
         lblIconoCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Close_Window_64px.png"))); // NOI18N
-        lblIconoCerrar.setMaximumSize(new java.awt.Dimension(64, 64));
-        lblIconoCerrar.setMinimumSize(new java.awt.Dimension(64, 64));
         lblIconoCerrar.setName("lblIconoCerrar"); // NOI18N
-        lblIconoCerrar.setPreferredSize(new java.awt.Dimension(64, 64));
+        lblIconoCerrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIconoCerrarMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panEncabezadoLayout = new javax.swing.GroupLayout(panEncabezado);
         panEncabezado.setLayout(panEncabezadoLayout);
@@ -104,7 +112,7 @@ public class frmProveedores extends javax.swing.JFrame {
                 .addGap(111, 111, 111)
                 .addComponent(lblTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblIconoCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(lblIconoCerrar))
         );
         panEncabezadoLayout.setVerticalGroup(
             panEncabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,9 +123,11 @@ public class frmProveedores extends javax.swing.JFrame {
                     .addComponent(lblIconoProveedores))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panEncabezadoLayout.createSequentialGroup()
-                .addComponent(lblIconoCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblIconoCerrar)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
+
+        lblIconoCerrar.getAccessibleContext().setAccessibleName("lblIconoCerrar");
 
         panContenido.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -168,17 +178,9 @@ public class frmProveedores extends javax.swing.JFrame {
 
         btnGuardar.setBackground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Save_64px.png"))); // NOI18N
-        btnGuardar.setLabel("");
-        btnGuardar.setMaximumSize(new java.awt.Dimension(97, 73));
-        btnGuardar.setMinimumSize(new java.awt.Dimension(97, 73));
-        btnGuardar.setPreferredSize(new java.awt.Dimension(97, 73));
 
         btnEditar.setBackground(new java.awt.Color(255, 255, 255));
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Edit_64px_1.png"))); // NOI18N
-        btnEditar.setLabel("");
-        btnEditar.setMaximumSize(new java.awt.Dimension(97, 73));
-        btnEditar.setMinimumSize(new java.awt.Dimension(97, 73));
-        btnEditar.setPreferredSize(new java.awt.Dimension(97, 73));
 
         jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Trash_Can_52px.png"))); // NOI18N
@@ -211,9 +213,6 @@ public class frmProveedores extends javax.swing.JFrame {
         lblProvExist.setText("Proveedores existentes");
 
         lblLupa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Detective_64px.png"))); // NOI18N
-        lblLupa.setMaximumSize(new java.awt.Dimension(64, 64));
-        lblLupa.setMinimumSize(new java.awt.Dimension(64, 64));
-        lblLupa.setPreferredSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout panContenidoLayout = new javax.swing.GroupLayout(panContenido);
         panContenido.setLayout(panContenidoLayout);
@@ -298,7 +297,7 @@ public class frmProveedores extends javax.swing.JFrame {
                     .addComponent(jSeparator2)
                     .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(lblLupa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblLupa)
                 .addGap(217, 217, 217))
         );
         panContenidoLayout.setVerticalGroup(
@@ -346,12 +345,12 @@ public class frmProveedores extends javax.swing.JFrame {
                             .addComponent(lblRazonSocial)
                             .addComponent(txtRazonSocial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblLocalidad)
-                            .addComponent(lblMunicipio)
-                            .addComponent(txtLocalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtMunicipio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblMunicipio)
+                                .addComponent(txtLocalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMunicipio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(18, 18, 18)
                 .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -367,7 +366,7 @@ public class frmProveedores extends javax.swing.JFrame {
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblLupa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblLupa))
                 .addGap(35, 35, 35)
                 .addComponent(lblProvExist)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -407,6 +406,10 @@ public class frmProveedores extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void lblIconoCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoCerrarMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_lblIconoCerrarMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -429,9 +432,9 @@ public class frmProveedores extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(frmProveedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
             java.util.logging.Logger.getLogger(frmProveedores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmProveedores.class.getName()).llblIconoCerrar.util.logging.Level.SEVERE, null, ex);
-        }
+        } catch (UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(frmProveedores.class.getName()).log(Level.SEVERE, null, ex);
+        } 
         //</editor-fold>
 
         /* Create and display the form */

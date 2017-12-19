@@ -166,6 +166,11 @@ public class frmClientes extends javax.swing.JFrame {
         lblCorreo.setText("Correo");
 
         cbxEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Ciudad de México", "Chiapas", "Chihuahua", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas" }));
+        cbxEstado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxEstadoActionPerformed(evt);
+            }
+        });
 
         jSeparator1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
@@ -174,6 +179,11 @@ public class frmClientes extends javax.swing.JFrame {
 
         btnGuardar.setBackground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Save_64px.png"))); // NOI18N
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
 
         btnCancelar.setBackground(new java.awt.Color(255, 255, 255));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/punto_de_venta/vistas/icons/icons8_Cancel_64px_1.png"))); // NOI18N
@@ -263,21 +273,14 @@ public class frmClientes extends javax.swing.JFrame {
                 .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(173, Short.MAX_VALUE))
             .addGroup(panContenidoLayout.createSequentialGroup()
                 .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panContenidoLayout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(lblSubtitulo)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(panContenidoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jSeparator1))
-                    .addGroup(panContenidoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1))
-                    .addGroup(panContenidoLayout.createSequentialGroup()
                         .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panContenidoLayout.createSequentialGroup()
+                                .addGap(48, 48, 48)
+                                .addComponent(lblSubtitulo))
                             .addGroup(panContenidoLayout.createSequentialGroup()
                                 .addGap(265, 265, 265)
                                 .addComponent(jLabel1)
@@ -293,7 +296,12 @@ public class frmClientes extends javax.swing.JFrame {
                             .addGroup(panContenidoLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jLabel2)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(panContenidoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(panContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSeparator1)
+                            .addComponent(jScrollPane1))))
                 .addContainerGap())
         );
         panContenidoLayout.setVerticalGroup(
@@ -405,6 +413,14 @@ public class frmClientes extends javax.swing.JFrame {
     private void lblIconoClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoClientesMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_lblIconoClientesMouseClicked
+
+    private void cbxEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxEstadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbxEstadoActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     /**
      * @param args the command line arguments

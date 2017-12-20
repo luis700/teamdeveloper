@@ -10,6 +10,7 @@ package punto_de_venta;
  * @author Carlinne
  */
 public class Empresa {
+    String rfc ="";
     
     
 }

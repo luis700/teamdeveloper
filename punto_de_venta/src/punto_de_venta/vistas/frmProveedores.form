@@ -166,17 +166,17 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txtRFC" max="32767" attributes="0"/>
-                                      <Component id="txtCalle" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtColonia" alignment="0" pref="300" max="32767" attributes="0"/>
-                                      <Component id="txtCP" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="txtrfc" max="32767" attributes="0"/>
+                                      <Component id="txtcalle" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtcolonia" alignment="0" pref="300" max="32767" attributes="0"/>
+                                      <Component id="txtcp" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="txtNumExt" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="txtnumext" min="-2" pref="150" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="lblNumInt" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="txtNumInt" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="txtnumint" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -200,11 +200,11 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton4" min="-2" pref="64" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="txtRazonSocial" min="-2" pref="300" max="-2" attributes="0"/>
+                          <Component id="txtrazonsocial" min="-2" pref="300" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtLocalidad" max="32767" attributes="0"/>
-                                  <Component id="txtTelefono" pref="170" max="32767" attributes="0"/>
+                                  <Component id="txtlocalidad" max="32767" attributes="0"/>
+                                  <Component id="txttelefono" pref="170" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -213,13 +213,13 @@
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtMunicipio" max="32767" attributes="0"/>
-                                  <Component id="txtCelular" pref="170" max="32767" attributes="0"/>
+                                  <Component id="txtmunicipio" max="32767" attributes="0"/>
+                                  <Component id="txtcelular" pref="170" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="txtCorreo" alignment="0" max="32767" attributes="0"/>
-                              <Component id="cbxEstado" alignment="0" pref="235" max="32767" attributes="0"/>
+                              <Component id="txtcorreo" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cbxestado" alignment="0" pref="235" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
@@ -267,35 +267,35 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblRfcProveedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtRFC" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtrfc" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblCalle" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtCalle" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtcalle" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="25" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblNumExt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtNumExt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtnumext" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblNumInt" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtNumInt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtnumint" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblEstado" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cbxEstado" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbxestado" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtColonia" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtcolonia" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblCelular" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtCelular" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtcelular" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txttelefono" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtCP" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtcp" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblCorreo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtCorreo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtcorreo" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
@@ -307,15 +307,15 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblRazonSocial" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtRazonSocial" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtrazonsocial" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lblLocalidad" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="lblMunicipio" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtLocalidad" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtMunicipio" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtlocalidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtmunicipio" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -435,25 +435,52 @@
                 <Property name="name" type="java.lang.String" value="lblCelular" noResource="true"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtRFC">
+            <Component class="javax.swing.JTextField" name="txtrfc">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtrfc" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCalle">
+            <Component class="javax.swing.JTextField" name="txtcalle">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtcalle" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtNumExt">
+            <Component class="javax.swing.JTextField" name="txtnumext">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtnumext" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtNumInt">
+            <Component class="javax.swing.JTextField" name="txtnumint">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtnumint" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtColonia">
+            <Component class="javax.swing.JTextField" name="txtcolonia">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtcolonia" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCP">
+            <Component class="javax.swing.JTextField" name="txtcp">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtcp" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtRazonSocial">
+            <Component class="javax.swing.JTextField" name="txtrazonsocial">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtrazonsocial" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtLocalidad">
+            <Component class="javax.swing.JTextField" name="txtlocalidad">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtlocalidad" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtMunicipio">
+            <Component class="javax.swing.JTextField" name="txtmunicipio">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtmunicipio" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="cbxEstado">
+            <Component class="javax.swing.JComboBox" name="cbxestado">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="33">
@@ -497,11 +524,20 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtTelefono">
+            <Component class="javax.swing.JTextField" name="txttelefono">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txttelefono" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCelular">
+            <Component class="javax.swing.JTextField" name="txtcelular">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtcelular" noResource="true"/>
+              </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCorreo">
+            <Component class="javax.swing.JTextField" name="txtcorreo">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="txtcorreo" noResource="true"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btnGuardar">
               <Properties>
